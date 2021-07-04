@@ -4,6 +4,8 @@ class CreateSneakers < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :image
       t.integer :likes
+      t.integer :brand_id
+      t.string :brand_name
       
       t.timestamps
     end
