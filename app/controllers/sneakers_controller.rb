@@ -3,7 +3,12 @@ class SneakersController < ApplicationController
 
   # GET /sneakers
   def index
-    @sneakers = Sneaker.all
+    if params[:brand_id]
+      @brand = Brand.find_by_id(params[:brand_id])
+      @sneakers = @brand.sneakers
+    else
+      @sneakers = Sneaker.order(:name)
+    end
 
     render json: @sneakers
   end
@@ -46,6 +51,7 @@ class SneakersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def sneaker_params
-      params.fetch(:sneaker, {})
+      params.require(:sneaker).permit(:name, :image, :brand_id)
+      # params.fetch(:sneaker, {})
     end
 end

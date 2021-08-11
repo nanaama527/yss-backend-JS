@@ -4,6 +4,7 @@ class BrandsController < ApplicationController
   # GET /brands
   def index
     @brands = Brand.all
+    # @brands = Brand.last
 
     render json: @brands
   end

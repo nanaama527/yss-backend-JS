@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 2021_07_04_212459) do
   create_table "sneakers", force: :cascade do |t|
     t.string "name"
     t.string "image"
-    t.integer "likes"
     t.integer "brand_id"
     t.string "brand_name"
     t.datetime "created_at", precision: 6, null: false

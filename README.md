@@ -1,24 +1,14 @@
-# README
+# The SNKR Collection
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to your personal sneaker journal for keeping track of all the kicks you have, all the kicks you want, and even the kicks you thinking about. 
 
-Things you may want to cover:
+This API is for managing the sneakers you would fetch for your frontend. 
 
-* Ruby version
 
-* System dependencies
+This application is associated with the following backend repo. find it here:
 
-* Configuration
+[https://github.com/nanaama527/your-snkr-shop-react]
 
-* Database creation
+## To Run:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run 'rails s' in your console
